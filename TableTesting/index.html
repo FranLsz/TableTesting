@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Testing</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="addBox">
+            <div class="addControl">
+                <label for="addNombre" id="addNombreLabel" class="addLabel">Nombre</label>
+                <input type="text" id="addNombre" class="addInput"/>
+            </div>
+            <div class="addControl">
+                <label for="addNombre" id="addApellidosLabel" class="addLabel">Apellidos</label>
+                <input type="text" id="addApellidos" class="addInput" />
+            </div>
+
+            <button id="btnAdd">Agregar</button>
+        </div>
+
+        <div class="tableBox">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Nº
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Apellidos
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="DataContentZone"></tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>

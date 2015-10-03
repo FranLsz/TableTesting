@@ -1,0 +1,32 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.wrapper .addBox {
+    width: 40%;
+    float: left;
+    display: inline-block;
+}
+
+    .wrapper .addBox .addControl {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+        .wrapper .addBox .addControl .addLabel {
+            display: block;
+        }
+
+    .wrapper .addBox #btnAdd {
+        width: 20%;
+        display: block;
+        margin: 0 auto;
+    }
+
+.wrapper .tableBox {
+    width: 60%;
+    float: left;
+    display: inline-block;
+}
