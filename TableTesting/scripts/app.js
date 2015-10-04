@@ -12,10 +12,8 @@ $(document).ready(function () {
         var a = $("#addApellidos").val();
 
         var row = "<div class='erow'><span>" + i++ + "</span><span>" + n + "</span><span>" + a + "</span></div>";
-
-        $("#DataContentZone").append(row);
+        $(row).appendTo($("#DataContentZone"));
     }
-
 
     $("#btnAdd").click(add);
 
