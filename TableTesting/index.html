@@ -3,7 +3,8 @@
 <head>
     <title>Table Testing</title>
     <meta charset="utf-8" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/app.js"></script>
@@ -20,16 +21,15 @@
                 <label for="addNombre" id="addApellidosLabel" class="addLabel">Apellidos</label>
                 <input type="text" id="addApellidos" class="addInput" />
             </div>
-
-            <button id="btnAdd">Agregar</button>
+            <div class="addControl">
+                <button id="btnAdd"><i class="material-icons">add_circle</i></button>
+            </div>
         </div>
-
         <div class="tableBox">
             <table>
                 <thead>
                     <tr>
                         <th>
-                            Nº
                         </th>
                         <th>
                             Nombre
@@ -39,8 +39,11 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody id="DataContentZone"></tbody>
+                <!-- <tbody id="DataContentZone">
+                </tbody>
+                    -->
             </table>
+            <div id="DataContentZone"></div>
         </div>
 
     </div>

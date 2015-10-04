@@ -1,8 +1,32 @@
-﻿body {
+﻿/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {
+        right: -70px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {
+        right: -70px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+body {
     padding: 0;
     margin: 0;
     width: 100%;
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(51, 153, 255);
+    color: white;
 }
 
 .wrapper .addBox {
@@ -15,20 +39,100 @@
         width: 50%;
         display: block;
         margin: 0 auto;
+        margin-top: 15%;
     }
 
         .wrapper .addBox .addControl .addLabel {
             display: block;
+            font-size: 100px;
         }
 
-    .wrapper .addBox #btnAdd {
-        width: 20%;
-        display: block;
-        margin: 0 auto;
-    }
+        .wrapper .addBox .addControl .addInput {
+            width: 500px;
+            height: 50px;
+            font-size: 50px;
+            color: rgb(51, 153, 255);
+            border: 0;
+            padding: 10px;
+        }
+
+            .wrapper .addBox .addControl .addInput:focus {
+                outline: none;
+            }
+
+        .wrapper .addBox .addControl #btnAdd {
+            width: 115px;
+            border: 0;
+            height: 115px;
+            font-size: 50px;
+            margin-left: 180px;
+            margin-top: 20px;
+            padding: 20px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            background-color: rgb(51, 153, 255);
+            color: white;
+        }
+
+            .wrapper .addBox .addControl #btnAdd i {
+                font-size: 75px;
+            }
+
+            .wrapper .addBox .addControl #btnAdd:hover {
+                color: rgb(51, 153, 255);
+                background-color: white;
+            }
+
+            .wrapper .addBox .addControl #btnAdd:focus {
+                outline: none;
+            }
 
 .wrapper .tableBox {
-    width: 60%;
+    width: 50%;
     float: left;
     display: inline-block;
+    margin-left: 5%;
 }
+
+    .wrapper .tableBox table {
+        border-collapse: collapse;
+    }
+
+        .wrapper .tableBox table thead tr th {
+            font-size: 75px;
+            font-weight: normal;
+            padding-right: 100px;
+        }
+
+.wrapper #DataContentZone {
+    font-size: 45px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+    .wrapper #DataContentZone .erow {
+        position: relative;
+        -webkit-animation-name: mymove; /* Chrome, Safari, Opera */
+        -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+        animation-name: mymove;
+        animation-duration: 1s;
+        display: flex;
+    }
+
+        .wrapper #DataContentZone .erow span {
+            padding: 20px;
+        }
+
+            .wrapper #DataContentZone .erow span:nth-child(2) {
+                padding-left: 50px;
+                width: 350px;
+            }
+
+            .wrapper #DataContentZone .erow span:nth-child(3) {
+                width: 400px;
+            }
+
+        .wrapper #DataContentZone .erow:nth-child(odd) {
+            background-color: white;
+            color: rgb(51, 153, 255);
+        }
